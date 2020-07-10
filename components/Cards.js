@@ -43,6 +43,8 @@ function cardMaker(object) {
   console.log(card);
 
   headline.textContent = object.headline;
+  image.src = object.authorPhoto;
+  name.textContent = `By ${object.authorName}`;
 
   card.addEventListener("click", () => {
     console.log(headline);
